@@ -1,0 +1,9 @@
+{
+  "resourceType": "Condition",
+  "subject": {
+    "reference": "Patient/P001"
+  },
+  "code": {
+    "text": "Type 2 Diabetes Mellitus"
+  }
+}
