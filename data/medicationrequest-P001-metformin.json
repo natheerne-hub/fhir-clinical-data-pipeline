@@ -1,0 +1,12 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "metformin-P001",
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/P001"
+  },
+  "medicationCodeableConcept": {
+    "text": "Metformin 500 mg"
+  }
+}
