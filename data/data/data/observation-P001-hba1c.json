@@ -1,0 +1,14 @@
+{
+  "resourceType": "Observation",
+  "status": "final",
+  "subject": {
+    "reference": "Patient/P001"
+  },
+  "code": {
+    "text": "HbA1c"
+  },
+  "valueQuantity": {
+    "value": 8.5,
+    "unit": "%"
+  }
+}
