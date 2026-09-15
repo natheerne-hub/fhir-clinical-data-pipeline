@@ -1,68 +1,79 @@
 # FHIR Clinical Data Pipeline
 
-## Clinical Interoperability Portfolio Project
+## Clinical Interoperability + Analytics Portfolio Project
 
-A healthcare informatics project demonstrating how a synthetic clinical scenario can be represented as structured **FHIR resources**, coded with standard clinical terminologies, and conceptually mapped from an **HL7 v2** admission message.
+A healthcare informatics project demonstrating how a synthetic clinical scenario can be represented as structured **FHIR resources**, coded with standard clinical terminologies, conceptually mapped from **HL7 v2**, validated with Python, and transformed into a small analytics-ready clinical summary.
 
-The project is intentionally small and transparent: its purpose is to demonstrate interoperability concepts, resource relationships, terminology use, and privacy-safe clinical-data design rather than claim production EHR integration.
+The project is intentionally small and transparent. It demonstrates interoperability concepts and a reproducible bridge from structured clinical resources to downstream analytics without claiming production EHR integration.
 
 ## Healthcare scenario
 
-Synthetic patient `P001` is represented across a connected clinical record containing:
-
-- a Patient resource,
-- Type 2 Diabetes Mellitus as a Condition,
-- an HbA1c Observation of 8.5%,
-- a Metformin MedicationRequest,
-- an Encounter,
-- and a Bundle collecting the FHIR resources.
-
-No real patient data or protected health information is used.
+Synthetic patient `P001` is represented across a connected clinical record containing a Patient, Type 2 Diabetes Mellitus Condition, HbA1c Observation of 8.5%, Metformin MedicationRequest, Encounter and FHIR Bundle. No real patient data or protected health information is used.
 
 ## Interoperability components
 
 | Component | Demonstrated use |
 |---|---|
-| FHIR | Structured Patient, Condition, Observation, MedicationRequest, Encounter and Bundle resources |
-| HL7 v2 | Example admission message for legacy healthcare messaging context |
+| FHIR | Patient, Condition, Observation, MedicationRequest, Encounter and Bundle resources |
+| HL7 v2 | Example admission message and conceptual FHIR mapping |
 | ICD-10-CM | Diagnosis representation |
-| LOINC | Laboratory observation coding |
-| UCUM | Standardized units of measure |
-| Resource references | Linking clinical information around the same synthetic patient |
+| LOINC | HbA1c laboratory coding |
+| UCUM | Standardized observation units |
+| Python | Resource/reference validation and analytics extraction |
+| CSV / JSON | Human-readable analytics and validation outputs |
+
+## Reproducible workflow
+
+Run from the repository root:
+
+```bash
+python scripts/analyze_fhir.py
+```
+
+The script uses only the Python standard library. It:
+
+1. loads five core FHIR JSON resources;
+2. verifies expected `resourceType` values;
+3. checks that Condition, Observation, MedicationRequest and Encounter reference `Patient/P001`;
+4. checks ICD-10-CM, LOINC and UCUM system identifiers;
+5. extracts a compact patient-level analytics record;
+6. writes `outputs/clinical_summary.csv` and `outputs/validation_report.json`;
+7. exits with an error if a validation check fails.
+
+## Analytics-ready output
+
+The generated summary contains:
+
+`patient_id` · `gender` · `birth_date` · `diagnosis_code` · `diagnosis` · `hba1c_loinc` · `hba1c_value` · `hba1c_unit` · `medication` · `encounter_status`
+
+For the current synthetic record this captures ICD-10-CM `E11`, LOINC `4548-4`, HbA1c `8.5 %`, Metformin 500 mg and the encounter status while retaining the link back to the FHIR source resources.
 
 ## Repository structure
 
 ```text
-data/
-  patient-P001.json
-  condition-P001-diabetes.json
-  observation-P001-hba1c.json
-  medicationrequest-P001-metformin.json
-  encounter-P001.json
-  bundle-P001.json
-hl7/
-  sample-admission.hl7
-docs/
-  hl7-to-fhir-mapping.md
+data/       FHIR JSON resources
+hl7/        sample HL7 v2 admission message
+docs/       HL7-to-FHIR mapping notes
+scripts/    reproducible Python validation/analytics workflow
+outputs/    analytics-ready CSV and validation report
 ```
 
 ## What this project demonstrates
 
-1. **Clinical data modeling** — separating demographic, diagnostic, laboratory, medication and encounter information into appropriate resources.
-2. **Terminology awareness** — using recognized coding/unit systems instead of relying only on free text.
-3. **Interoperability reasoning** — documenting how information in an HL7 v2 workflow can correspond conceptually to FHIR resources.
-4. **Privacy-safe development** — using a fully synthetic scenario suitable for a public portfolio.
-5. **Healthcare data perspective** — treating interoperability as a prerequisite for reliable downstream analytics rather than only a software-format exercise.
+- **Clinical data modeling** — separating demographics, diagnoses, labs, medication and encounters into appropriate resources.
+- **Terminology awareness** — ICD-10-CM, LOINC and UCUM rather than free text alone.
+- **Interoperability reasoning** — connecting HL7 v2 concepts to FHIR resources.
+- **Data-quality validation** — checking resource types, patient references and coding systems before analysis.
+- **Analytics transformation** — extracting interoperable clinical data into a simple tabular output.
+- **Privacy-safe development** — all records are synthetic.
 
 ## Scope and limitations
 
-This repository is a **portfolio and educational interoperability demonstration**, not a production FHIR server, certified interface engine, or clinical system. The examples have not been validated against a live EHR implementation or organization-specific FHIR profiles.
-
-A logical future extension is a reproducible Python/SQL transformation and validation layer that checks resource completeness, terminology fields, references and analytics readiness. This is presented as future work, not as functionality already implemented.
+This is a **portfolio and educational interoperability demonstration**, not a production FHIR server, certified interface engine, medical device or clinical system. The examples have not been validated against a live EHR implementation or organization-specific FHIR profiles. The validation script checks selected portfolio invariants; it is not a substitute for full FHIR profile/schema validation.
 
 ## Why it matters for healthcare analytics
 
-Healthcare analytics depends on more than models and dashboards. Data must first be represented consistently and retain its clinical meaning across systems. This project complements my analytics portfolio by demonstrating familiarity with the interoperability layer that sits upstream of clinical and population-health analysis.
+Healthcare analytics depends on more than models and dashboards. Data must first be represented consistently, coded meaningfully and checked before transformation. This project demonstrates the upstream interoperability and data-quality layer that supports reliable clinical and population-health analytics.
 
 ## Author
 
