@@ -1,0 +1,2 @@
+patient_id,gender,birth_date,diagnosis_code,diagnosis,hba1c_loinc,hba1c_value,hba1c_unit,medication,encounter_status
+P001,male,1990-05-10,E11,Type 2 Diabetes Mellitus,4548-4,8.5,%,Metformin 500 mg,finished
