@@ -1,0 +1,29 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "patient_resource_type": true,
+    "condition_resource_type": true,
+    "observation_resource_type": true,
+    "medication_resource_type": true,
+    "encounter_resource_type": true,
+    "condition_patient_reference": true,
+    "observation_patient_reference": true,
+    "medication_patient_reference": true,
+    "encounter_patient_reference": true,
+    "diagnosis_uses_icd10cm": true,
+    "hba1c_uses_loinc": true,
+    "hba1c_uses_ucum": true
+  },
+  "summary": {
+    "patient_id": "P001",
+    "gender": "male",
+    "birth_date": "1990-05-10",
+    "diagnosis_code": "E11",
+    "diagnosis": "Type 2 Diabetes Mellitus",
+    "hba1c_loinc": "4548-4",
+    "hba1c_value": 8.5,
+    "hba1c_unit": "%",
+    "medication": "Metformin 500 mg",
+    "encounter_status": "finished"
+  }
+}
