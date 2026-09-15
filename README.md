@@ -1,18 +1,34 @@
 # FHIR Clinical Data Pipeline
 
-A hands-on healthcare interoperability portfolio project demonstrating how synthetic clinical data can be represented with FHIR, standardized with clinical terminologies, and conceptually mapped from HL7 v2 messages.
+## Clinical Interoperability Portfolio Project
 
-## Project goals
+A healthcare informatics project demonstrating how a synthetic clinical scenario can be represented as structured **FHIR resources**, coded with standard clinical terminologies, and conceptually mapped from an **HL7 v2** admission message.
 
-- Understand core FHIR resources and references.
-- Represent diagnoses with ICD-10-CM.
-- Represent laboratory observations with LOINC and UCUM units.
-- Demonstrate a simple HL7 v2 message and its conceptual mapping to FHIR.
-- Build a foundation for later Python/SQL healthcare analytics work.
+The project is intentionally small and transparent: its purpose is to demonstrate interoperability concepts, resource relationships, terminology use, and privacy-safe clinical-data design rather than claim production EHR integration.
 
-## Current synthetic patient scenario
+## Healthcare scenario
 
-Patient `P001` has a Type 2 Diabetes Mellitus condition, an HbA1c observation of 8.5%, a Metformin medication order, and a sample encounter. The resources are also collected in a FHIR Bundle.
+Synthetic patient `P001` is represented across a connected clinical record containing:
+
+- a Patient resource,
+- Type 2 Diabetes Mellitus as a Condition,
+- an HbA1c Observation of 8.5%,
+- a Metformin MedicationRequest,
+- an Encounter,
+- and a Bundle collecting the FHIR resources.
+
+No real patient data or protected health information is used.
+
+## Interoperability components
+
+| Component | Demonstrated use |
+|---|---|
+| FHIR | Structured Patient, Condition, Observation, MedicationRequest, Encounter and Bundle resources |
+| HL7 v2 | Example admission message for legacy healthcare messaging context |
+| ICD-10-CM | Diagnosis representation |
+| LOINC | Laboratory observation coding |
+| UCUM | Standardized units of measure |
+| Resource references | Linking clinical information around the same synthetic patient |
 
 ## Repository structure
 
@@ -30,24 +46,27 @@ docs/
   hl7-to-fhir-mapping.md
 ```
 
-## Standards demonstrated
+## What this project demonstrates
 
-| Standard | Role in this project |
-|---|---|
-| FHIR | Structured healthcare resources and references |
-| HL7 v2 | Example healthcare message exchange |
-| ICD-10-CM | Diagnosis coding |
-| LOINC | Laboratory observation coding |
-| UCUM | Standard units of measure |
+1. **Clinical data modeling** — separating demographic, diagnostic, laboratory, medication and encounter information into appropriate resources.
+2. **Terminology awareness** — using recognized coding/unit systems instead of relying only on free text.
+3. **Interoperability reasoning** — documenting how information in an HL7 v2 workflow can correspond conceptually to FHIR resources.
+4. **Privacy-safe development** — using a fully synthetic scenario suitable for a public portfolio.
+5. **Healthcare data perspective** — treating interoperability as a prerequisite for reliable downstream analytics rather than only a software-format exercise.
 
-## Data privacy
+## Scope and limitations
 
-All patient records in this repository are fully synthetic examples created for learning and portfolio demonstration. No real patient data or protected health information is used.
+This repository is a **portfolio and educational interoperability demonstration**, not a production FHIR server, certified interface engine, or clinical system. The examples have not been validated against a live EHR implementation or organization-specific FHIR profiles.
 
-## Next phase
+A logical future extension is a reproducible Python/SQL transformation and validation layer that checks resource completeness, terminology fields, references and analytics readiness. This is presented as future work, not as functionality already implemented.
 
-The next phase will add a reproducible transformation/analytics workflow using Python and SQL, followed by data-quality checks and a small healthcare analytics output.
+## Why it matters for healthcare analytics
+
+Healthcare analytics depends on more than models and dashboards. Data must first be represented consistently and retain its clinical meaning across systems. This project complements my analytics portfolio by demonstrating familiarity with the interoperability layer that sits upstream of clinical and population-health analysis.
 
 ## Author
 
-Dr. Natheer Soliman — Medical Doctor developing skills in Healthcare Data Analytics and Clinical Informatics.
+**Dr. Natheer Soliman, MD**  
+Healthcare Data Analytics · Clinical Analytics · Health Informatics
+
+[GitHub Profile](https://github.com/natheerne-hub)
