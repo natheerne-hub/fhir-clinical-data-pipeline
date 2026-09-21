@@ -1,2 +1,27 @@
-patient_id,gender,birth_date,diagnosis_code,diagnosis,hba1c_loinc,hba1c_value,hba1c_unit,medication,encounter_status
-P001,male,1990-05-10,E11,Type 2 Diabetes Mellitus,4548-4,8.5,%,Metformin 500 mg,finished
+patient_id,gender,birth_date,diagnosis_code,diagnosis,observation_loinc,observation_text,observation_value,observation_unit,medication,encounter_status
+P001,male,1990-05-10,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,8.5,%,Metformin 500 mg,finished
+P002,female,1983-03-14,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,9.4,%,Metformin 500 mg,finished
+P003,male,1998-08-15,I10,Essential Hypertension,8480-6,Systolic Blood Pressure,149.5,mm[Hg],Lisinopril 10 mg,finished
+P004,male,1973-11-16,E78.5,Hyperlipidemia,2089-1,LDL Cholesterol,180.2,mg/dL,Atorvastatin 20 mg,finished
+P005,male,1965-03-06,J45.909,Asthma,20150-9,FEV1,59.3,%,Albuterol 90 mcg inhaler,finished
+P006,male,1955-08-21,E03.9,Hypothyroidism,3016-3,TSH,12.3,m[IU]/L,Levothyroxine 75 mcg,in-progress
+P007,female,1962-02-11,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,9.1,%,Metformin 500 mg,finished
+P008,male,1991-12-10,I10,Essential Hypertension,8480-6,Systolic Blood Pressure,143.5,mm[Hg],Lisinopril 10 mg,finished
+P009,male,1949-07-18,E78.5,Hyperlipidemia,2089-1,LDL Cholesterol,190.6,mg/dL,Atorvastatin 20 mg,finished
+P010,female,1958-10-18,J45.909,Asthma,20150-9,FEV1,65.5,%,Albuterol 90 mcg inhaler,finished
+P011,female,1994-08-29,E03.9,Hypothyroidism,3016-3,TSH,14.6,m[IU]/L,Levothyroxine 75 mcg,finished
+P012,male,1943-04-14,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,7.3,%,Metformin 500 mg,finished
+P013,male,1971-03-16,I10,Essential Hypertension,8480-6,Systolic Blood Pressure,147.6,mm[Hg],Lisinopril 10 mg,in-progress
+P014,female,1967-07-28,E78.5,Hyperlipidemia,2089-1,LDL Cholesterol,195.5,mg/dL,Atorvastatin 20 mg,finished
+P015,female,1973-07-19,J45.909,Asthma,20150-9,FEV1,57.5,%,Albuterol 90 mcg inhaler,finished
+P016,female,1979-05-22,E03.9,Hypothyroidism,3016-3,TSH,9.0,m[IU]/L,Levothyroxine 75 mcg,finished
+P017,male,1996-02-08,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,10.5,%,Metformin 500 mg,in-progress
+P018,female,1989-01-27,I10,Essential Hypertension,8480-6,Systolic Blood Pressure,158.5,mm[Hg],Lisinopril 10 mg,in-progress
+P019,male,1988-04-09,E78.5,Hyperlipidemia,2089-1,LDL Cholesterol,178.1,mg/dL,Atorvastatin 20 mg,finished
+P020,female,1999-08-23,J45.909,Asthma,20150-9,FEV1,81.2,%,Albuterol 90 mcg inhaler,finished
+P021,female,1942-08-11,E03.9,Hypothyroidism,3016-3,TSH,6.9,m[IU]/L,Levothyroxine 75 mcg,finished
+P022,male,1984-08-10,E11,Type 2 Diabetes Mellitus,4548-4,HbA1c,9.9,%,Metformin 500 mg,finished
+P023,male,1956-07-25,I10,Essential Hypertension,8480-6,Systolic Blood Pressure,161.1,mm[Hg],Lisinopril 10 mg,finished
+P024,female,1981-04-03,E78.5,Hyperlipidemia,2089-1,LDL Cholesterol,191.8,mg/dL,Atorvastatin 20 mg,finished
+P025,male,1972-03-13,J45.909,Asthma,20150-9,FEV1,77.2,%,Albuterol 90 mcg inhaler,finished
+P026,male,1999-05-08,E03.9,Hypothyroidism,3016-3,TSH,11.4,m[IU]/L,Levothyroxine 75 mcg,finished
