@@ -1,0 +1,2432 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "total": 125,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P002",
+        "gender": "female",
+        "birthDate": "1983-03-14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P002",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P002"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P002",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": {
+          "reference": "Patient/P002"
+        },
+        "effectiveDateTime": "2026-09-03T08:30:00+02:00",
+        "valueQuantity": {
+          "value": 9.4,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P002",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P002"
+        },
+        "medicationCodeableConcept": {
+          "text": "Metformin 500 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P002",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P002"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P003",
+        "gender": "male",
+        "birthDate": "1998-08-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P003",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P003"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P003",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "subject": {
+          "reference": "Patient/P003"
+        },
+        "effectiveDateTime": "2026-04-03T08:45:00+02:00",
+        "valueQuantity": {
+          "value": 149.5,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P003",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P003"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P003",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P003"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P004",
+        "gender": "male",
+        "birthDate": "1973-11-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P004",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P004"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P004",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/P004"
+        },
+        "effectiveDateTime": "2026-07-02T07:15:00+02:00",
+        "valueQuantity": {
+          "value": 180.2,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P004",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P004"
+        },
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P004",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P004"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P005",
+        "gender": "male",
+        "birthDate": "1965-03-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P005",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P005"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.909",
+              "display": "Unspecified asthma, uncomplicated"
+            }
+          ],
+          "text": "Asthma"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P005",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20150-9",
+              "display": "Forced expiratory volume in 1 second"
+            }
+          ],
+          "text": "FEV1"
+        },
+        "subject": {
+          "reference": "Patient/P005"
+        },
+        "effectiveDateTime": "2026-05-04T15:15:00+02:00",
+        "valueQuantity": {
+          "value": 59.3,
+          "unit": "% predicted",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P005",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P005"
+        },
+        "medicationCodeableConcept": {
+          "text": "Albuterol 90 mcg inhaler"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P005",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P005"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P006",
+        "gender": "male",
+        "birthDate": "1955-08-21"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P006",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P006"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ],
+          "text": "Hypothyroidism"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P006",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "TSH"
+        },
+        "subject": {
+          "reference": "Patient/P006"
+        },
+        "effectiveDateTime": "2026-01-03T16:15:00+02:00",
+        "valueQuantity": {
+          "value": 12.3,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P006",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P006"
+        },
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 75 mcg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P006",
+        "status": "in-progress",
+        "subject": {
+          "reference": "Patient/P006"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P007",
+        "gender": "female",
+        "birthDate": "1962-02-11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P007",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P007"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P007",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": {
+          "reference": "Patient/P007"
+        },
+        "effectiveDateTime": "2026-06-15T11:15:00+02:00",
+        "valueQuantity": {
+          "value": 9.1,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P007",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P007"
+        },
+        "medicationCodeableConcept": {
+          "text": "Metformin 500 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P007",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P007"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P008",
+        "gender": "male",
+        "birthDate": "1991-12-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P008",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P008"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P008",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "subject": {
+          "reference": "Patient/P008"
+        },
+        "effectiveDateTime": "2026-06-16T14:30:00+02:00",
+        "valueQuantity": {
+          "value": 143.5,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P008",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P008"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P008",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P008"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P009",
+        "gender": "male",
+        "birthDate": "1949-07-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P009",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P009"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P009",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/P009"
+        },
+        "effectiveDateTime": "2026-08-05T13:00:00+02:00",
+        "valueQuantity": {
+          "value": 190.6,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P009",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P009"
+        },
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P009",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P009"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P010",
+        "gender": "female",
+        "birthDate": "1958-10-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P010",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P010"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.909",
+              "display": "Unspecified asthma, uncomplicated"
+            }
+          ],
+          "text": "Asthma"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P010",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20150-9",
+              "display": "Forced expiratory volume in 1 second"
+            }
+          ],
+          "text": "FEV1"
+        },
+        "subject": {
+          "reference": "Patient/P010"
+        },
+        "effectiveDateTime": "2026-08-16T08:00:00+02:00",
+        "valueQuantity": {
+          "value": 65.5,
+          "unit": "% predicted",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P010",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P010"
+        },
+        "medicationCodeableConcept": {
+          "text": "Albuterol 90 mcg inhaler"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P010",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P010"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P011",
+        "gender": "female",
+        "birthDate": "1994-08-29"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P011",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P011"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ],
+          "text": "Hypothyroidism"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P011",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "TSH"
+        },
+        "subject": {
+          "reference": "Patient/P011"
+        },
+        "effectiveDateTime": "2026-08-10T11:45:00+02:00",
+        "valueQuantity": {
+          "value": 14.6,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P011",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P011"
+        },
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 75 mcg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P011",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P011"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P012",
+        "gender": "male",
+        "birthDate": "1943-04-14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P012",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P012"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P012",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": {
+          "reference": "Patient/P012"
+        },
+        "effectiveDateTime": "2026-08-04T07:15:00+02:00",
+        "valueQuantity": {
+          "value": 7.3,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P012",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P012"
+        },
+        "medicationCodeableConcept": {
+          "text": "Metformin 500 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P012",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P012"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P013",
+        "gender": "male",
+        "birthDate": "1971-03-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P013",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P013"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P013",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "subject": {
+          "reference": "Patient/P013"
+        },
+        "effectiveDateTime": "2026-08-28T08:15:00+02:00",
+        "valueQuantity": {
+          "value": 147.6,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P013",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P013"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P013",
+        "status": "in-progress",
+        "subject": {
+          "reference": "Patient/P013"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P014",
+        "gender": "female",
+        "birthDate": "1967-07-28"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P014",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P014"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P014",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/P014"
+        },
+        "effectiveDateTime": "2026-09-28T11:45:00+02:00",
+        "valueQuantity": {
+          "value": 195.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P014",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P014"
+        },
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P014",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P014"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P015",
+        "gender": "female",
+        "birthDate": "1973-07-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P015",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P015"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.909",
+              "display": "Unspecified asthma, uncomplicated"
+            }
+          ],
+          "text": "Asthma"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P015",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20150-9",
+              "display": "Forced expiratory volume in 1 second"
+            }
+          ],
+          "text": "FEV1"
+        },
+        "subject": {
+          "reference": "Patient/P015"
+        },
+        "effectiveDateTime": "2026-04-05T17:15:00+02:00",
+        "valueQuantity": {
+          "value": 57.5,
+          "unit": "% predicted",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P015",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P015"
+        },
+        "medicationCodeableConcept": {
+          "text": "Albuterol 90 mcg inhaler"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P015",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P015"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P016",
+        "gender": "female",
+        "birthDate": "1979-05-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P016",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P016"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ],
+          "text": "Hypothyroidism"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P016",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "TSH"
+        },
+        "subject": {
+          "reference": "Patient/P016"
+        },
+        "effectiveDateTime": "2026-07-05T15:30:00+02:00",
+        "valueQuantity": {
+          "value": 9.0,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P016",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P016"
+        },
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 75 mcg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P016",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P016"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P017",
+        "gender": "male",
+        "birthDate": "1996-02-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P017",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P017"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P017",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": {
+          "reference": "Patient/P017"
+        },
+        "effectiveDateTime": "2026-09-25T13:45:00+02:00",
+        "valueQuantity": {
+          "value": 10.5,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P017",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P017"
+        },
+        "medicationCodeableConcept": {
+          "text": "Metformin 500 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P017",
+        "status": "in-progress",
+        "subject": {
+          "reference": "Patient/P017"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P018",
+        "gender": "female",
+        "birthDate": "1989-01-27"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P018",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P018"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P018",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "subject": {
+          "reference": "Patient/P018"
+        },
+        "effectiveDateTime": "2026-04-02T08:15:00+02:00",
+        "valueQuantity": {
+          "value": 158.5,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P018",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P018"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P018",
+        "status": "in-progress",
+        "subject": {
+          "reference": "Patient/P018"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P019",
+        "gender": "male",
+        "birthDate": "1988-04-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P019",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P019"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P019",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/P019"
+        },
+        "effectiveDateTime": "2026-01-04T16:15:00+02:00",
+        "valueQuantity": {
+          "value": 178.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P019",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P019"
+        },
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P019",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P019"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P020",
+        "gender": "female",
+        "birthDate": "1999-08-23"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P020",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P020"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.909",
+              "display": "Unspecified asthma, uncomplicated"
+            }
+          ],
+          "text": "Asthma"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P020",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20150-9",
+              "display": "Forced expiratory volume in 1 second"
+            }
+          ],
+          "text": "FEV1"
+        },
+        "subject": {
+          "reference": "Patient/P020"
+        },
+        "effectiveDateTime": "2026-07-20T09:30:00+02:00",
+        "valueQuantity": {
+          "value": 81.2,
+          "unit": "% predicted",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P020",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P020"
+        },
+        "medicationCodeableConcept": {
+          "text": "Albuterol 90 mcg inhaler"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P020",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P020"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P021",
+        "gender": "female",
+        "birthDate": "1942-08-11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P021",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P021"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ],
+          "text": "Hypothyroidism"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P021",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "TSH"
+        },
+        "subject": {
+          "reference": "Patient/P021"
+        },
+        "effectiveDateTime": "2026-08-16T14:45:00+02:00",
+        "valueQuantity": {
+          "value": 6.9,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P021",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P021"
+        },
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 75 mcg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P021",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P021"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P022",
+        "gender": "male",
+        "birthDate": "1984-08-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P022",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P022"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P022",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "subject": {
+          "reference": "Patient/P022"
+        },
+        "effectiveDateTime": "2026-05-24T14:15:00+02:00",
+        "valueQuantity": {
+          "value": 9.9,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P022",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P022"
+        },
+        "medicationCodeableConcept": {
+          "text": "Metformin 500 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P022",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P022"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P023",
+        "gender": "male",
+        "birthDate": "1956-07-25"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P023",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P023"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Essential (primary) hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P023",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            }
+          ],
+          "text": "Systolic Blood Pressure"
+        },
+        "subject": {
+          "reference": "Patient/P023"
+        },
+        "effectiveDateTime": "2026-09-01T11:00:00+02:00",
+        "valueQuantity": {
+          "value": 161.1,
+          "unit": "mmHg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mm[Hg]"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P023",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P023"
+        },
+        "medicationCodeableConcept": {
+          "text": "Lisinopril 10 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P023",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P023"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P024",
+        "gender": "female",
+        "birthDate": "1981-04-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P024",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P024"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E78.5",
+              "display": "Hyperlipidemia, unspecified"
+            }
+          ],
+          "text": "Hyperlipidemia"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P024",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "LDL Cholesterol"
+        },
+        "subject": {
+          "reference": "Patient/P024"
+        },
+        "effectiveDateTime": "2026-09-18T15:30:00+02:00",
+        "valueQuantity": {
+          "value": 191.8,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P024",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P024"
+        },
+        "medicationCodeableConcept": {
+          "text": "Atorvastatin 20 mg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P024",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P024"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P025",
+        "gender": "male",
+        "birthDate": "1972-03-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P025",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P025"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.909",
+              "display": "Unspecified asthma, uncomplicated"
+            }
+          ],
+          "text": "Asthma"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P025",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "20150-9",
+              "display": "Forced expiratory volume in 1 second"
+            }
+          ],
+          "text": "FEV1"
+        },
+        "subject": {
+          "reference": "Patient/P025"
+        },
+        "effectiveDateTime": "2026-04-08T15:45:00+02:00",
+        "valueQuantity": {
+          "value": 77.2,
+          "unit": "% predicted",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P025",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P025"
+        },
+        "medicationCodeableConcept": {
+          "text": "Albuterol 90 mcg inhaler"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P025",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P025"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P026",
+        "gender": "male",
+        "birthDate": "1999-05-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "condition-P026",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/P026"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E03.9",
+              "display": "Hypothyroidism, unspecified"
+            }
+          ],
+          "text": "Hypothyroidism"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-P026",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+            }
+          ],
+          "text": "TSH"
+        },
+        "subject": {
+          "reference": "Patient/P026"
+        },
+        "effectiveDateTime": "2026-06-07T14:30:00+02:00",
+        "valueQuantity": {
+          "value": 11.4,
+          "unit": "mIU/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "m[IU]/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medicationrequest-P026",
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/P026"
+        },
+        "medicationCodeableConcept": {
+          "text": "Levothyroxine 75 mcg"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "encounter-P026",
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/P026"
+        }
+      }
+    }
+  ]
+}
