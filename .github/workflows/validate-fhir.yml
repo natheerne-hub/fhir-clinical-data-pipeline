@@ -1,0 +1,31 @@
+name: Validate FHIR Cohort Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Regenerate synthetic cohort bundle
+        run: python scripts/generate_cohort.py --n 25 --seed 7
+
+      - name: Validate all FHIR resources and build analytics summary
+        run: python scripts/analyze_fhir.py
+
+      - name: Verify outputs were produced
+        run: |
+          test -f outputs/clinical_summary.csv
+          test -f outputs/validation_report.json
+          echo "Outputs present."
