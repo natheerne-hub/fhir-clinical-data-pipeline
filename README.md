@@ -146,7 +146,7 @@ population-health analytics.
 
 ## Author
 
-**Dr. Natheer Soliman, MD**
+**Dr. Nather Yunis Suliaman, MD**
 Healthcare Data Analytics · Clinical Analytics · Health Informatics
 
 [GitHub Profile](https://github.com/natheerne-hub)
